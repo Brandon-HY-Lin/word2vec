@@ -29,3 +29,22 @@ Analyze Trump's tweets using Word2Vec and display it using t-SNE.
       
       
     ![t-SNE of Trump's tweets][tsne_trump_tweets]
+
+
+# Key APIs
+  - Normalization and Tokenization:
+    - gensim.utils.simple_preprocess(doc)
+  - Stop Words:
+    - gensim.parsing.preprocessing.STOPWORDS
+  - Lemmatizer:
+    - gensim.stem.WordNetLemmatizer().lemmatize()
+  - Phrase (Bigram):
+    - gensim.models.phrases.Phrase()
+    - gensim.models.phrases.Phraser()
+    - gensim.models.phrases.Phraser()[docs]
+  - Word2Vec:
+    - gensim.models.Word2Vec()
+    - gensim.models.Word2Vec().build_vocab()
+    - gensim.models.Word2Vec().train()
+    - gensim.models.Word2Vec()[docs]
+ 
